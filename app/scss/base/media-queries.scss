@@ -1,23 +1,39 @@
-$mq-1: 48em !default; /* 768px / 16px = 48em */
-$mq-2: 62em !default; /* 992px / 16px = 62em */
+$mq-1: 768px !default; /* 768px / 16px = 48em */
+$mq-2: 992px !default; /* 992px / 16px = 62em */
+$mq-3: 1200px !default; /* 1200px / 16px = 75em */
+$mq-4: 1800px !default; /* 1200px / 16px = 112.5em */
 
-/* Extra Small Only */
-@mixin extra-small-only {
-    @media only screen and (max-width : $mq-1 - 0.0625) {
-        @content;
-    }
-}
-
-/* Small Devices, Tablets */
-@mixin small-and-above {
-    @media only screen and (min-width : $mq-1) {
+/* Small Only */
+@mixin small-only {
+    @media screen and (max-width : $mq-1 - 1px) {
         @content;
     }
 }
 
 /* Medium Devices, Tablets */
 @mixin medium-and-above {
-    @media only screen and (min-width : $mq-2) {
+    @media screen and (min-width : $mq-1) {
+        @content;
+    }
+}
+
+/* Large Devices, Tablets */
+@mixin large-and-above {
+    @media screen and (min-width : $mq-2) {
+        @content;
+    }
+}
+
+/* XL Devices, Tablets */
+@mixin xl-and-above {
+    @media screen and (min-width : $mq-3) {
+        @content;
+    }
+}
+
+/* XXL Devices, Tablets */
+@mixin xxl-and-above {
+    @media screen and (min-width : $mq-4) {
         @content;
     }
 }

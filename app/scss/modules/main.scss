@@ -1,0 +1,178 @@
+/***************************
+MAIN SECTION
+***************************/
+.sun-ball {
+  border-radius: 100%;
+  background-color: #FAC466;
+  height: 30vh;
+  width: 30vh;
+}
+
+.full-screen {
+  width: 100%;
+  height: 85vh;
+  /*padding-top: 8vh;*/
+  @include small-only {
+    padding-top: 3vh;
+  }
+  @include medium-and-above {
+    padding-top: 4vh;
+  }
+  @include large-and-above {
+    padding-top: 5vh;
+  }
+  @include xl-and-above {
+    padding-top: 5vh;
+  }
+  @include xxl-and-above {
+    padding-top: 8vh;
+  }
+}
+
+.sun-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(10px) translateZ(0);
+  transform: perspective(10px) translateZ(0);
+  box-shadow: 0 0 15px #FAC466;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-backface-visibility: hidden;
+  &:hover, &:focus, &:active {
+    box-shadow: 0 0 40px #FAC466;
+  }
+}
+
+#tap {
+  @include small-only {
+    color: white;
+    opacity: 0.5;
+    margin-left: -5vw;
+  }
+  @include medium-and-above {
+    display: none;
+  }
+}
+
+.logo {
+  text-align: center;
+  color: #000080;
+  transition: color 1s ease;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  @include small-only {
+    margin-top: -40vh;
+    text-transform: uppercase;
+  }
+  @include medium-and-above {
+    margin-top: -35vh;
+    font-size: 2.4em;
+  }
+}
+
+.plus-transition {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+ }
+
+.logo-first {
+  @include small-only {
+    font-size: 1.8em;
+  }
+  @include medium-and-above {
+    font-size: 1.4em;
+  }
+  @include xl-and-above {
+    font-size: 1.5em;
+  }
+  @include xxl-and-above {
+    font-size: 1.8em;
+  }
+}
+
+.logo-second {
+  @include small-only {
+    letter-spacing: 1.3px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  @include medium-and-above {
+    font-size: 0.8em;
+  }
+  @include large-and-above {
+    font-size: 1em;
+  }
+  @include xxl-and-above {
+    font-size: 1.2em;
+  }
+}
+
+.logo-third {
+  @include small-only {
+    font-size: 1em;
+  }
+  @include medium-and-above {
+    font-size: 0.4em;
+  }
+  @include large-and-above {
+    font-size: 0.6em;
+  }
+}
+
+.svg-wrapper {
+  z-index: -100;
+}
+
+.mobileSVG {
+  display:none;
+}
+
+.bird-transition {
+  display: none;
+}
+
+.birds {
+  @include small-only {
+    margin-top: 20vh;
+    position: absolute;
+    margin-left: -25vw;
+  } 
+  @include medium-and-above {
+    margin-left: -20vw;
+    position: absolute;
+    margin-top: 20vh;
+  }
+  @include xl-and-above {
+    margin-left: -20vw;
+  }
+}
+
+svg {
+  position: absolute; 
+  z-index: 100;
+  @include small-only {
+    margin-top: 20vh;
+    position: absolute;
+    margin-left: -25vw;
+  }
+}
+
+.arrow {
+  animation: scrolldown 1s infinite ease-in-out;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+ /* @include xxl-and-above {
+    .work-page, .about-page {
+      margin-left: 20vw;
+      margin-right: 20vw;
+    } */
+

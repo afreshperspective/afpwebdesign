@@ -1,0 +1,180 @@
+/***************************
+SECTIONS
+***************************/
+
+#section2 {
+  /*margin-top: 30vh;*/
+  @include small-only {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+  }
+  @include medium-and-above {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+  }
+  @include large-and-above {
+    margin-top: 35vh;
+    margin-bottom: 15vh;
+  }
+  @include xl-and-above {
+    margin-top: 35vh;
+    margin-bottom: 15vh;
+  }
+  @include xxl-and-above {
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+  }
+}
+
+.desc {
+  /*line-height: 1.3;*/
+  /*letter-spacing: 1.1px;
+  font-size: 1.4em;*/
+  text-align: center;
+  color: white;
+  @include small-only {
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 10vh;
+  }
+  @include medium-and-above {
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    margin-bottom: 10vh;
+  }
+  @include large-and-above {
+    /*line-height: 1.1;*/
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    /*margin-bottom: 10vh;*/
+  }
+  @include xl-and-above {
+    /*NEW*/letter-spacing: 1.1px;
+    font-size: 1.5em;
+    margin-bottom: 20vh;
+  }
+  @include xxl-and-above {
+    font-size: 1.7em;
+    margin-bottom: 35vh;
+  }
+}
+
+.desc-emphasize {
+  /*font-size: 1.6em;*/
+  @include small-only {
+    font-size: 1.3em;
+  }
+  @include medium-and-above {
+    font-size: 1.5em;
+  }
+  @include large-and-above {
+    /*font-size: 1.5em;*/
+  }
+  @include xl-and-above {
+    font-size: 1.7em;
+  }
+  @include xxl-and-above {
+    font-size: 1.9em;
+  }
+}
+
+.desc-1, .desc-2 {
+  /*margin-top: 3vh;
+  width: 50vw;*/
+  @include small-only {
+    margin-top: 3vh;
+    width: 75vw;
+  }
+  @include medium-and-above {
+    margin-top: 3vh;
+    width: 50vw;
+  }
+  @include large-and-above {
+    width: 40vw;
+  }
+  @include xl-and-above {
+    width: 50vw;
+  }
+  @include xxl-and-above {
+    width: 40vw;
+  }
+}
+
+#tree-svg {
+  @include small-only {
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 0vh;
+    padding-bottom: 5vh;
+  }
+  @include medium-and-above {
+    position: relative;
+    margin: auto;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+  }
+  @include large-and-above {
+    /*position: relative;
+    margin: auto;*/
+    padding-bottom: 5vh;
+    /*padding-top: 2vh;*/
+  }
+  @include xl-and-above {
+    /*position: relative;
+    margin: auto;
+    padding-bottom: 5vh;
+    /*padding-top: 2vh;*/
+  }
+}
+
+#tree-xxl {
+  display: none;
+  @include xxl-and-above {
+    display: block;
+    position: relative;
+    margin: auto; 
+    padding-top: 5vh
+  }
+}
+
+.tree-transition {
+    opacity: 0;
+}
+
+#tree-svg {
+  @include xxl-and-above {
+    display: none;
+  }
+}
+
+.appear {
+    -webkit-animation: fadeIn 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn 3s; /* Firefox < 16 */
+        -ms-animation: fadeIn 3s; /* Internet Explorer */
+         -o-animation: fadeIn 3s; /* Opera < 12.1 */
+            animation: fadeIn 3s;
+            opacity: 1;
+}
+
+.sub-title, .sub-title-v, .sub-title-v-port {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.sub-title-v, .sub-title-v-port {
+  @include small-only {
+    font-size: 2em;
+  }
+}
+
+.page-main {
+  @include large-and-above {
+    margin-bottom: -10vh;
+  }
+  @include xl-and-above {
+    margin-bottom: -10vh;
+  }
+}

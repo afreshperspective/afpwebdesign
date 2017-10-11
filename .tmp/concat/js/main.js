@@ -127,6 +127,14 @@ angular.module('perspectiveApp')
 				    	$('.portfolio-2').css({ "opacity": "1", "transition-duration": "0.5s" });
 				    }
 				});
+
+				$scope.changeChevron = function(input) {
+					if ($(input).hasClass("fa-chevron-circle-down")) {
+						$(input).removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+					} else {
+						$(input).removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+					}
+				};
 			}])
 
 			.controller('AboutController', ['$scope', function($scope) {
