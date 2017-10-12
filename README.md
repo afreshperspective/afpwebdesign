@@ -1,5 +1,6 @@
 # afpwebdesign
 Mock website design company that best represents my current skill set and is continually under development.
+
 Notable features & achievements:
   1. Animations when switching AngularJS views to give the impression that the website is scrolling left or right,
   2. 311kb and 2.2 second load time,
